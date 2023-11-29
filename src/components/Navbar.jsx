@@ -16,6 +16,8 @@ import {
 import {SearchIcon} from "../assets/SearchIcon.jsx";
 import {ChevronDown, Scale} from "./Icons.jsx";
 import {useLocation} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
     const location = useLocation();
@@ -41,9 +43,9 @@ export const Navbar = () => {
                 <NavbarMenuToggle/>
             </NavbarContent>
 
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
+            <NavbarContent className="hidden sm:flex gap-8" justify="center">
                 <NavbarBrand>
-                    <p className="font-bold text-xl">Sepatu<span className="text-primary">Ku</span></p>
+                    <p className="font-bold text-xl mr-20">Sepatu<span className="text-primary">Ku</span></p>
                 </NavbarBrand>
                 <NavbarItem>
                     <Link color="foreground" href="#">
@@ -72,11 +74,52 @@ export const Navbar = () => {
                         }}
                     >
                         <DropdownItem
-                            key="autoscaling"
-                            description="ACME scales apps to meet user demand, automagically, based on load."
+                            key="sneakers"
                             startContent={icons.scale}
                         >
-                            Autoscaling
+                            Sneakers
+                        </DropdownItem>
+                        <DropdownItem
+                            key="sandal"
+                            startContent={icons.scale}
+                        >
+                            Sandal
+                        </DropdownItem>
+                        <DropdownItem
+                            key="boots"
+                            startContent={icons.scale}
+                        >
+                            Boots
+                        </DropdownItem>
+                        <DropdownItem
+                            key="sepatu-formal"
+                            startContent={icons.scale}
+                        >
+                            Sepatu Formal
+                        </DropdownItem>
+                        <DropdownItem
+                            key="sepatu-olahraga"
+                            startContent={icons.scale}
+                        >
+                            Sepatu Olahraga
+                        </DropdownItem>
+                        <DropdownItem
+                            key="flat-shoes"
+                            startContent={icons.scale}
+                        >
+                            Flat Shoes
+                        </DropdownItem>
+                        <DropdownItem
+                            key="wedges"
+                            startContent={icons.scale}
+                        >
+                            Wedges
+                        </DropdownItem>
+                        <DropdownItem
+                            key="slip-on"
+                            startContent={icons.scale}
+                        >
+                            Slip-on
                         </DropdownItem>
                     </DropdownMenu>
                 </Dropdown>
@@ -101,13 +144,16 @@ export const Navbar = () => {
                     startContent={<SearchIcon size={18}/>}
                     type="search"
                 />
+                <Button isIconOnly color="transparent">
+                    <FontAwesomeIcon icon={faCartShopping}/>
+                </Button>
                 <Dropdown placement="bottom-end">
                     <DropdownTrigger>
                         <Avatar
                             isBordered
                             as="button"
                             className="transition-transform"
-                            color="secondary"
+                            color="primary"
                             name="Jason Hughes"
                             size="sm"
                             src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
