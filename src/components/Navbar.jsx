@@ -15,19 +15,19 @@ import {
 } from "@nextui-org/react";
 import {SearchIcon} from "../assets/SearchIcon.jsx";
 import {ChevronDown, Scale} from "./Icons.jsx";
+import {useLocation} from "react-router-dom";
 
 export const Navbar = () => {
+    const location = useLocation();
+    const isLoginPage = location.pathname === '/login';
+    const isRegisterPage = location.pathname === '/register';
+
+    if (isLoginPage || isRegisterPage) return null;
+
     const menuItems = [
-        "Profile",
-        "Dashboard",
-        "Activity",
-        "Analytics",
-        "System",
-        "Deployments",
-        "My Settings",
-        "Team Settings",
-        "Help & Feedback",
-        "Log Out",
+        "Featured",
+        "Category",
+        "All Product"
     ];
 
     const icons = {
@@ -115,15 +115,11 @@ export const Navbar = () => {
                     </DropdownTrigger>
                     <DropdownMenu aria-label="Profile Actions" variant="flat">
                         <DropdownItem key="profile" className="h-14 gap-2">
-                            <p className="font-semibold">Signed in as</p>
-                            <p className="font-semibold">zoey@example.com</p>
+                            <p className="font-semibold">Nurdin Ahmad Alawiyah</p>
+                            <p className="font-semibold">nurdinahmada@gmail.com</p>
                         </DropdownItem>
-                        <DropdownItem key="settings">My Settings</DropdownItem>
-                        <DropdownItem key="team_settings">Team Settings</DropdownItem>
-                        <DropdownItem key="analytics">Analytics</DropdownItem>
-                        <DropdownItem key="system">System</DropdownItem>
-                        <DropdownItem key="configurations">Configurations</DropdownItem>
-                        <DropdownItem key="help_and_feedback">Help & Feedback</DropdownItem>
+                        <DropdownItem key="settings">Transaksi</DropdownItem>
+                        <DropdownItem key="team_settings">Wishlist</DropdownItem>
                         <DropdownItem key="logout" color="danger">
                             Log Out
                         </DropdownItem>

@@ -5,7 +5,6 @@ import LoginIllustration from "../components/Login/LoginIllustration.jsx";
 
 const LoginPage = () => {
     return (
-
         <div
             className="mx-auto w-full lg:max-w-screen rounded-3xl ring-1 ring-gray-200 lg:flex items-center justify-center">
             <div className="p-8 lg:m-8 sm:p-10 lg:flex-auto">

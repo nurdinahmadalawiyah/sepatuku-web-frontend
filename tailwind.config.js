@@ -17,10 +17,10 @@ module.exports = {
               light: {
                   colors: {
                       primary: {
-                          DEFAULT: "#403577",
+                          DEFAULT: "#13ACC4",
                           foreground: "#FFFFFF"
                       },
-                      focus: "#403577",
+                      focus: "#13ACC4",
                   }
               }
           }
