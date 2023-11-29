@@ -3,7 +3,7 @@ import SignInDivider from "../components/Login/SignInDivider.jsx";
 import FormAndButton from "../components/Login/FormAndButton.jsx";
 import LoginIllustration from "../components/Login/LoginIllustration.jsx";
 
-const LoginPage = () => {
+const Login = () => {
     return (
         <div
             className="mx-auto w-full lg:max-w-screen rounded-3xl ring-1 ring-gray-200 lg:flex items-center justify-center">
@@ -21,4 +21,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default Login;

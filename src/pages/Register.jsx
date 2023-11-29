@@ -3,7 +3,7 @@ import SignUpDivider from "../components/Register/SignUpDivider.jsx";
 import RegisterIllustration from "../components/Register/RegisterIlustration.jsx";
 import FormAndButton from "../components/Register/FormAndButton.jsx";
 
-const RegisterPage = () => {
+const Register = () => {
     return (
         <div
             className="mx-auto w-full lg:max-w-screen rounded-3xl ring-1 ring-gray-200 lg:flex items-center justify-center">
@@ -22,4 +22,4 @@ const RegisterPage = () => {
     )
 }
 
-export default RegisterPage;
+export default Register;
