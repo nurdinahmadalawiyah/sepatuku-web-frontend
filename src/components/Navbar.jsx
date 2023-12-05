@@ -45,7 +45,9 @@ export const Navbar = () => {
 
             <NavbarContent className="hidden sm:flex gap-8" justify="center">
                 <NavbarBrand>
-                    <p className="font-bold text-xl mr-20">Sepatu<span className="text-primary">Ku</span></p>
+                    <Link href="/" className={`text-decoration-none color-inherit cursor-pointer`}>
+                        <p className="font-bold text-xl mr-20">Sepatu<span className="text-primary">Ku</span></p>
+                    </Link>
                 </NavbarBrand>
                 <NavbarItem>
                     <Link color="foreground" href="#">
