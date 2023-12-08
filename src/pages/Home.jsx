@@ -1,6 +1,16 @@
+import Carousel from "../components/Home/Carousel"
+
 const Home = () => {
+    const bannerList = [
+        'src/assets/banner-1.jpg',
+        'src/assets/banner-2.jpg',
+        'src/assets/banner-3.jpg',
+    ];
+
     return (
-        <p>Hello</p>
+        <div>
+            <Carousel bannerList={bannerList} />
+        </div>
     )
 }
 
