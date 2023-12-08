@@ -2,7 +2,6 @@ import SocialMediaSignIn from "../components/Login/SocialMediaSignIn.jsx";
 import SignInDivider from "../components/Login/SignInDivider.jsx";
 import FormAndButton from "../components/Login/FormAndButton.jsx";
 import LoginIllustration from "../components/Login/LoginIllustration.jsx";
-
 const Login = () => {
     return (
         <div
