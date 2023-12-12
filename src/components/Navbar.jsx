@@ -126,8 +126,8 @@ export const Navbar = () => {
                     </DropdownMenu>
                 </Dropdown>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
-                        All Products
+                    <Link color="foreground" href="/product">
+                        Products
                     </Link>
                 </NavbarItem>
             </NavbarContent>
@@ -146,9 +146,11 @@ export const Navbar = () => {
                     startContent={<SearchIcon size={18}/>}
                     type="search"
                 />
-                <Button isIconOnly color="transparent">
-                    <FontAwesomeIcon icon={faCartShopping}/>
-                </Button>
+                <Link href="/cart" className={`text-decoration-none color-inherit cursor-pointer`}>
+                    <Button isIconOnly color="transparent">
+                        <FontAwesomeIcon icon={faCartShopping}/>
+                    </Button>
+                </Link>
                 <Dropdown placement="bottom-end">
                     <DropdownTrigger>
                         <Avatar
@@ -166,9 +168,9 @@ export const Navbar = () => {
                             <p className="font-semibold">Nurdin Ahmad Alawiyah</p>
                             <p className="font-semibold">nurdinahmada@gmail.com</p>
                         </DropdownItem>
-                        <DropdownItem key="settings">Transaksi</DropdownItem>
-                        <DropdownItem key="team_settings">Wishlist</DropdownItem>
-                        <DropdownItem key="logout" color="danger">
+                        <DropdownItem href="/transaction" key="settings">Transaksi</DropdownItem>
+                        <DropdownItem href="/wishlist" key="team_settings">Wishlist</DropdownItem>
+                        <DropdownItem href="/login" key="logout" color="danger">
                             Log Out
                         </DropdownItem>
                     </DropdownMenu>
