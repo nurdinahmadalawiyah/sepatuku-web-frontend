@@ -16,9 +16,14 @@ module.exports = {
           themes: {
               light: {
                   colors: {
+                      background: "#FFFFFF",
                       primary: {
                           DEFAULT: "#13ACC4",
-                          foreground: "#FFFFFF"
+                          foreground: "#ECEDEE"
+                      },
+                      secondary: {
+                          DEFAULT: "#1F394C",
+                          foreground: "#ECEDEE"
                       },
                       focus: "#13ACC4",
                   }
