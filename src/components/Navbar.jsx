@@ -50,7 +50,7 @@ export const Navbar = () => {
                     </Link>
                 </NavbarBrand>
                 <NavbarItem>
-                    <Link color="foreground" href="#">
+                    <Link color="foreground" href="/#featured">
                         Featured
                     </Link>
                 </NavbarItem>
@@ -135,7 +135,7 @@ export const Navbar = () => {
             <NavbarContent justify="end">
                 <Input
                     classNames={{
-                        base: "max-w-full sm:max-w-[20rem] h-10",
+                        base: "max-w-full sm:max-w-[20rem] h-10 sm:w-full",
                         mainWrapper: "h-full",
                         input: "text-small",
                         inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
