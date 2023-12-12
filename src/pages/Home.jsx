@@ -1,15 +1,15 @@
-import Carousel from "../components/Home/Carousel"
+import MyCarousel from "../components/MyCarousel";
 
 const Home = () => {
     const bannerList = [
-        'src/assets/banner-1.jpg',
-        'src/assets/banner-2.jpg',
-        'src/assets/banner-3.jpg',
+        { image: 'src/assets/banner-1.jpg', altText: 'Banner 1'},
+        { image: 'src/assets/banner-2.jpg', altText: 'Banner 1'},
+        { image: 'src/assets/banner-3.jpg', altText: 'Banner 1'},
     ];
 
     return (
-        <div>
-            <Carousel bannerList={bannerList} />
+        <div className="mt-16">
+            <MyCarousel items={bannerList} />
         </div>
     )
 }
